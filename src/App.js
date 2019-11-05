@@ -13,9 +13,9 @@ export default class App extends React.Component{
   }
 
   astros = () => {
-    let astroList = ``;
+    let astroList = [];
     for(let a of this.state.astros){
-      astroList += `<li>name: ${a.name} | craft: ${a.craft}</li>`
+      astroList.push(<li>name: {a.name} | craft: {a.craft} </li>);
     }
     return astroList;
   }
