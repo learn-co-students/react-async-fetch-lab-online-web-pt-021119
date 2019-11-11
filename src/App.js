@@ -15,7 +15,7 @@ export default class App extends Component{
 
   render(){
     return(
-      <div>{this.state.peopleInSpace.map(person => person.name)}</div>
+      <div>{this.state.peopleInSpace.map(person => <h2>{person.name}</h2>)}</div>
     )
   }
 }
